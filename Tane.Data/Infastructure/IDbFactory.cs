@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tane.Data
+namespace Tane.Data.Infastructure
 {
-    public class Class1
+    public interface IDbFactory:IDisposable
     {
+        TaneDbContext Init();
     }
 }
