@@ -8,7 +8,7 @@ using Tane.Model.Models;
 
 namespace Tane.Data.Respositories
 {
-    public interface IProductCategoryRepository
+    public interface IProductCategoryRepository:IRepository<ProductCategory>
     {
         IEnumerable<ProductCategory> GetByAlias(string alias);
     }
